@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "BlogFeed: A blogging app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix blogfeed && npm run build --prefix blogfeed"
+  },
+ 
+  "homepage": "http://localhost:3000/Feed",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "heroku": "^7.42.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.26",
+    "nodemon": "^2.0.4"
+  }
+}
